@@ -18,8 +18,11 @@ class Waiter(Menu):
             else:
                 print("I'm sorry, we do not serve that here")
 
+            if choice.lower() == "no":
+                ordering = False
 
+        return self.order_list
 
-test1 = Waiter()
+    def __str__(self):
+        return "You ordered {}".format(self.order_list)
 
-print(test1)
