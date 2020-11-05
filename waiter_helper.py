@@ -5,7 +5,7 @@ from menu import Menu
 class Waiter(Menu):
     def __init__(self):
         super().__init__() # Inherits the menu from the menu class
-        self.order_list = []
+        self.order_list = [] # Creates a list for the class
 
     # This is the ordering method, every time a person is asked
     # what they want ordered, they can input an item on the meny
@@ -13,10 +13,12 @@ class Waiter(Menu):
 
     def order(self):
         ordering = True
+        print("What would you like? ")
 
         while ordering:
-            choice = input("What would you like to order? ")
+            choice = input("---> ")
 
+            # Item must be available in the menu to be ordered
             if choice in self.menu:
                 self.order_list.append(choice)
             else:
