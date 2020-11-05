@@ -17,4 +17,4 @@ Tasks/User stories:
 
 3. As a user, I want to have my order read back to me in formated way so I know what I ordered.
 
-[Task Complete]()
+[Task Complete](https://github.com/MattSokol79/Python_Restaurant_Waiter/blob/main/waiter_helper.py)
