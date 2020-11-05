@@ -8,4 +8,18 @@ class Waiter(Menu):
         self.order_list = []
 
     def order(self):
+        ordering = True
 
+        while ordering:
+            choice = input("What would you like to order? ")
+
+            if choice in self.menu:
+                self.order_list.append(choice)
+            else:
+                print("I'm sorry, we do not serve that here")
+
+
+
+test1 = Waiter()
+
+print(test1)
