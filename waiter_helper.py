@@ -15,7 +15,7 @@ class Waiter(Menu):
               "diners may only order maximum 3 items", self.menu)
         print("What would you like to order?")
         while order_number < 3: # We only want the diner to order 3 items
-            diner_order = input("-->")
+            diner_order = input("--> ").title()
             # If the specified item is present in the menu, we can add it to the order_list
             if diner_order in self.menu:
                 self.order_list.append(diner_order)
